@@ -1,0 +1,59 @@
+<!-- EXAMEN EJERCICIO 2 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaikyShop/Administration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <script src="naiky.js" defer></script>
+    <script src="userMenagement.js" defer></script>
+    <script src="user.js" defer></script>
+    <script src="userDiv.js" defer></script>
+</head>
+<body">
+    <!-- Header of the page -->
+    <header>
+        <h1>Naiky</h1>
+        <!-- Using this class in order to possition our menu to the right side -->
+        <nav class="mainMenu">
+            <ul>
+                <li><button>Footwear</button></li>
+                <li><button>Cart</button></li>
+                <!-- I´ll set a little dropdown menu here just to change between pages  -->
+                <li><button class="dropdown" onclick="toggleDropdown()">
+                    Account
+                    <ul>
+                        <li class="drpdwnMenu"><a href="index.html">New product</a></li>
+                        <li class="drpdwnMenu"><a href="users.html">Users</a></li>
+                    </ul>
+                </button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Administration > <span class="blackUnderlined">Users</span></p>
+        <div class="container">
+            <div class="containerDisplay" id="dataDisplay"></div>
+            <div class="containerDivision">
+                <h2>NEW USER</h2>
+                <form action="">
+                    <input type="text" name="userName" id="userName" autocomplete="off" placeholder=" " class="input" required>
+                    <label for="userName" class="label">Name</label><br>
+                    <input type="text" name="apel" id="apel" autocomplete="off" placeholder=" " class="input" required>
+                    <label for="apel" class="label">Apellidos</label><br>
+                    <input type="text" name="fechaNac" id="fechaNac" autocomplete="off" placeholder=" " class="input" required>
+                    <label for="fechaNac" class="label">Fecha de Cumpleaños (año 2023)</label><br>
+                </form>
+                <button name="submit" id="submit">Add</button>
+                <button name="campanya" id="campanya">Fidelizacion</button>
+                <button name="delete" id="delete">Borrar recordatorios</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
